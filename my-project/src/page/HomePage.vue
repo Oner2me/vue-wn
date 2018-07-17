@@ -1,14 +1,16 @@
 <template>
     <div class="home-box">
         <header>
-            <div class="home-scan-code"></div>
-            <div class="home-search">
-                <label>
-                    <i></i>
-                    <input type="text" placeholder="运动护腰">
-                </label>
+            <div class="home-scan-code">
+                <img src="../assets/images/scan-code.png" alt="scan-code.png">
             </div>
-            <div class="home-more"></div>
+            <div class="home-search">
+                <i><img src="../assets/images/search.png" alt="search.png"></i>
+                <input type="text" placeholder="运动护腰">
+            </div>
+            <div class="home-more">
+                <img src="../assets/images/more.png" alt="more.png">
+            </div>
         </header>
         <div class="home-banner"></div>
         <section>
@@ -69,14 +71,32 @@
             </div>
         </section>
         <footer>
-
+            <nav>
+                <div class="home-zhuye zy-current">
+                    <router-link to=""></router-link><span>主页</span>
+                </div>
+                <div class="home-fenlei">
+                    <router-link to=""></router-link><span>分类</span>
+                </div>
+                <div class="home-find">
+                    <router-link to=""></router-link><span>发现</span>
+                </div>
+                <div class="home-gouwuche">
+                    <router-link to=""></router-link><span>购物车</span>
+                </div>
+                <div class="home-wode">
+                    <router-link to=""></router-link><span>我的</span>
+                </div>
+            </nav>
         </footer>
     </div>
 </template>
 
 <script>
-export default {};
+    export default {};
 </script>
 
-<style scoped>
+<style scoped lang="less">
+    @import url('../assets/less/iconfont/iconfont.css');
+    @import url('../assets/less/homepage.less');
 </style>

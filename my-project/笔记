@@ -1,0 +1,19 @@
+1.  wpy-beautify 
+    格式化vue格式的代码，之前用vue-beautify忽然就失灵了,编辑器提示这个插件有很多bug
+    就上网重新搜索格式化的插件就搜索到了这个
+    从这个人的博客中找到的：
+        蔡俊锋的博客 Internet of things
+        https://blog.csdn.net/caijunfen/article/details/79566769
+2.  设置placeholder
+        input::-webkit-input-placeholder{
+            color:red;
+        }
+        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+            color:red;
+        }
+        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+            color:red;
+        }
+        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+            color:red;
+        }
