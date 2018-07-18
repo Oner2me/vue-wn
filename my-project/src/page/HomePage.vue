@@ -12,16 +12,55 @@
                 <img src="../assets/images/more.png" alt="more.png">
             </div>
         </header>
-        <div class="home-banner"></div>
+        <div class="home-banner">
+            <Banner :pics="imgs"></Banner>
+        </div>
         <section>
-            <div class="home-category"></div>
+            <div class="home-category">
+                <div class="hc">
+                    <img src="../assets/images/home-cate-1.png" alt="home-cate-1.png">
+                    <div class="text">
+                        <span>运动护膝</span>
+                    </div>
+                </div>
+                <div class="hc">
+                    <img src="../assets/images/home-cate-2.png" alt="home-cate-2.png">
+                    <div class="text">
+                        <span>劳保用品</span>
+                    </div>
+                </div>
+                <div class="hc">
+                    <img src="../assets/images/home-cate-3.png" alt="home-cate-3.png">
+                    <div class="text">
+                        <span>军警用品</span>
+                    </div>
+                </div>
+            </div>
             <div class="home-news-shop">
                 <h2>最新商品</h2>
                 <div class="ns">
-                    <div class="ns-left"></div>
+                    <div class="ns-left">
+                        <img src="../assets/images/home-ns-1.png" alt="home-ns-1.png">
+                        <div class="ns-left-text">
+                            <span>TMT户外运动护膝</span>
+                            <span>防摔伤</span>
+                        </div>
+                    </div>
                     <div class="ns-right">
-                        <div class="ns-top"></div>
-                        <div class="ns-bottom"></div>
+                        <div class="ns-top">
+                            <img src="../assets/images/home-ns-2.png" alt="home-ns-2.png">
+                            <div class="ns-right-text">
+                                <span>半月板损伤护膝</span>
+                                <span>运动保护 APTONIAK</span>
+                            </div>
+                        </div>
+                        <div class="ns-bottom">
+                            <img src="../assets/images/home-ns-3.png" alt="home-ns-3.png">
+                            <div class="ns-right-text">
+                                <span>TMT护膝运动男跑</span>
+                                <span>步半月板损伤</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="home-more">
@@ -39,7 +78,7 @@
                     <div class="hs-right"></div>
                 </div>
                 <div class="home-more">
-                    MORE
+                    <span>MORE</span>
                 </div>
             </div>
             <div class="home-best-shop">
@@ -73,19 +112,24 @@
         <footer>
             <nav>
                 <div class="home-zhuye zy-current">
-                    <router-link to=""></router-link><span>主页</span>
+                    <router-link to=""></router-link>
+                    <span>主页</span>
                 </div>
                 <div class="home-fenlei">
-                    <router-link to=""></router-link><span>分类</span>
+                    <router-link to=""></router-link>
+                    <span>分类</span>
                 </div>
                 <div class="home-find">
-                    <router-link to=""></router-link><span>发现</span>
+                    <router-link to=""></router-link>
+                    <span>发现</span>
                 </div>
                 <div class="home-gouwuche">
-                    <router-link to=""></router-link><span>购物车</span>
+                    <router-link to=""></router-link>
+                    <span>购物车</span>
                 </div>
                 <div class="home-wode">
-                    <router-link to=""></router-link><span>我的</span>
+                    <router-link to=""></router-link>
+                    <span>我的</span>
                 </div>
             </nav>
         </footer>
@@ -93,10 +137,24 @@
 </template>
 
 <script>
-    export default {};
+import Banner from "../components/MySwiper";
+export default {
+  name: "homePage",
+  components: {
+    Banner
+  },
+  data() {
+    return {
+      imgs: [
+        require("../assets/images/home-banner-1.png"),
+        require("../assets/images/home-banner-2.png"),
+        require("../assets/images/home-banner-3.png")
+      ]
+    };
+  }
+};
 </script>
 
 <style scoped lang="less">
-    @import url('../assets/less/iconfont/iconfont.css');
-    @import url('../assets/less/homepage.less');
+@import url("../assets/less/homepage.less");
 </style>
