@@ -59,6 +59,20 @@ header {
 
 section {
     padding: 0 24px;
+    h2 {
+        font-size: 28px;
+        color: #5c5c5c;
+        margin-bottom: 24px;
+    }
+    .home-more {
+        font-size: 24px;
+        color: #616161;
+        text-align: right;
+        span {
+            line-height: 24px;
+        }
+        margin-top:6px;
+    }
 }
 
 .home-category {
@@ -111,11 +125,6 @@ section {
 }
 
 .home-news-shop {
-    h2 {
-        font-size: 28px;
-        color: #5c5c5c;
-        margin-bottom: 24px;
-    }
     .ns {
         overflow: hidden;
     }
@@ -133,8 +142,8 @@ section {
         padding: 6px 0;
         span {
             display: inline-block;
-			font-size: 24px;
-			line-height:24px;
+            font-size: 24px;
+            line-height: 24px;
             color: #4d4d4d;
             &:first-child {
                 margin-bottom: 14px;
@@ -148,11 +157,10 @@ section {
             height: 230px;
         }
     }
-    .ns-right-text,
     .ns-right-text {
         display: flex;
         flex-direction: column;
-        align-content: space-between;
+        align-content: flex-end;
         width: 280px;
         height: 70px;
         font-size: 24px;
@@ -164,21 +172,155 @@ section {
         position: relative;
         top: -30px;
         span {
-			display: block;
-			line-height:24px;
+            display: block;
+            line-height: 24px;
             &:first-child {
                 margin-bottom: 14px;
             }
         }
     }
-    .home-more {
-        font-size: 24px;
-        color: #616161;
-		text-align: right;
-		span{
-			line-height: 24px;
-		}
-		margin-top:6px;
+}
+
+.home-img {
+    img {
+        width: 702px;
+        height: 333px;
+        margin: 75px 0 44px;
+    }
+}
+
+.home-hots-shop {
+    .home-hs-img {
+        position: relative;
+        img {
+            width: 702px;
+            height: 360px;
+        }
+        .home-hs-font{
+            position: absolute;
+            right:0;
+            bottom:0;
+        }
+        span{
+            display:block;
+            font-size: 24px;
+            line-height:42px;
+            color:#ffffff;
+            &:first-child{
+                text-align:right;
+            }
+        }
+    }
+    .hs{
+        margin-top:46px;
+        display:flex;
+        justify-content: space-between;
+        .hs-box{
+            img{
+                width:316px;
+                height:165px;
+            }
+        }
+        .hs-font{
+            margin:12px auto 24px;
+            width:200px;
+        }
+        span{
+            display:inline-block;
+            text-align: center;
+            font-size: 24px;
+            color:#333333;
+            line-height: 42px;
+        }
+
+    }
+
+}
+
+.home-best-shop{
+    .bs-cate-top{
+        display:flex;
+        justify-content: space-between;
+    }
+    .bs-cate{
+        img{
+            width:206px;
+            height:401px; 
+        }
+        span{
+            display:block;
+            text-align:center;
+            font-size: 24px;
+            color:#414141;
+        }
+    }
+    .bs-cate-bottom{
+        display:flex;
+        justify-content: space-between;
+        margin:34px 0 30px;
+    }
+    .bs-box{
+        position: relative;
+        img{
+            width:346px;
+            height:289px;
+        }
+    }
+    .bs-text{
+        position: absolute;
+        left:0;
+        bottom:0;
+        width:346px;
+        height:67px;
+        line-height: 67px;
+        background-color:rgba(221,222,222,0.76);
+        box-sizing: border-box;
+        padding-left:10px;
+        span{
+            font-size: 24px;
+            color:#4d4d4d;
+        }
+
+    }
+}
+
+.home-recommend{
+    margin:41px 0 95px;
+    .rec{
+        display:flex;
+        justify-content: space-between;
+        margin-bottom:21px;
+    }
+    img{
+        width:345px;
+        height:364px;
+    }
+    .rec-left{
+        position: relative;
+    }
+    .rec-right{
+        position: relative;
+        background-color:#e6e2df;
+    }
+    .rl-text{
+        position: absolute;
+        left:0;
+        bottom:14px;
+        padding-left:10px;
+        font-size: 28px;
+        color:#515151;
+    }
+    .rr-text{
+        position: absolute;
+        left:-78px;
+        bottom:0;
+        width:334px;
+        height:75px;
+        line-height: 75px;
+        background-color:rgba(0,0,0,0.52);
+        font-size: 28px;
+        padding-left:10px;
+        color:#f6f6f6;
     }
 }
 
