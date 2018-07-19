@@ -188,7 +188,7 @@
                     <span>购物车</span>
                 </div>
                 <div class="home-wode">
-                    <router-link to=""></router-link>
+                    <router-link to="/user"></router-link>
                     <span>我的</span>
                 </div>
             </nav>
